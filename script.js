@@ -3,7 +3,7 @@ function compute()
     var principal = parseInt(document.getElementById("principal").value);
 
     // check value of principle
-    if (principal <= 0){
+    if (principal <= 0 || isNaN(principal)){
         alert("Enter a positive number!")
         document.getElementById("principal").focus()
         return
